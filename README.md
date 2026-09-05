@@ -6,6 +6,10 @@ A travel discovery and planning platform that helps users explore destinations, 
 
 ![LocalLegacy](preview.png)
 
+## Live Demo
+
+🔗 [LocalLegacy – Live Website](https://locallegacy.vercel.app/)
+
 ## Features
 
 - Explore destinations by country and city
