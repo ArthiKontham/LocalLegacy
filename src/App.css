@@ -1,0 +1,23 @@
+.stage { min-height: 100dvh; }
+.phone { position: relative; width: 100%; height: 100dvh; background: var(--white); overflow: hidden; display: flex; flex-direction: column; }
+.screen { flex: 1; overflow-y: auto; overflow-x: hidden; width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 20px 104px; scrollbar-width: none; }
+.screen.profile { padding-top: 22px; }
+.screen::-webkit-scrollbar { display: none; }
+.anim { animation: rise 0.4s cubic-bezier(0.22,0.61,0.36,1) both; }
+@keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.fade { animation: fade 0.3s ease both; }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+.toast { position: absolute; left: 18px; right: 18px; bottom: 92px; background: var(--ink); color: #fff; border-radius: var(--r-md); padding: 13px 15px; font-size: 13.5px; display: flex; align-items: center; gap: 9px; z-index: 30; animation: rise 0.3s ease both; }
+.toast .ok { color: #f2a46f; }
+
+.splash { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; }
+.splash-mark { font-size: 24px; color: var(--brown); }
+.splash-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); animation: pulse 1s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: .25; transform: scale(.8); } 50% { opacity: 1; transform: scale(1); } }
+
+/* generic header used on home/save */
+.appbar { position: sticky; top: 0; z-index: 6; background: var(--white); margin: 0 -20px 14px; padding: 18px 20px 12px; }
+.appbar-eyebrow { font-size: 12px; color: var(--ink-3); }
+.appbar-loc { display: flex; align-items: center; gap: 4px; font-size: 18px; font-weight: 500; }
+

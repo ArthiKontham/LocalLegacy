@@ -1,0 +1,12 @@
+.discover-section { font-size: 22px; font-family: 'Kaisei Tokumin', serif; font-weight: 700; margin: 4px 0 14px; }
+.discover-none { font-size: 14px; color: var(--ink-3); padding: 24px 2px; }
+.guide-filter { display: flex; gap: 8px; margin-bottom: 16px; }
+.gf { border: 1px solid var(--peach-line); background: var(--white); border-radius: 999px; padding: 6px 14px; font-family: 'Roboto'; font-size: 13px; color: var(--ink-2); cursor: pointer; }
+.gf.on { background: var(--brown); border-color: var(--brown); color: #fff; }
+
+.listing-list { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media (min-width: 700px) {
+  .listing-list { grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; }
+  .guide-grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 18px; }
+  .discover-section { font-size: 20px; }
+}

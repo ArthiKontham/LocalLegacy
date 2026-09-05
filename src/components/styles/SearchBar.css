@@ -1,0 +1,4 @@
+.searchbar { display: flex; align-items: center; gap: 10px; border: 1px solid var(--peach-line); border-radius: var(--r-md); padding: 0 14px; height: 48px; margin-bottom: 16px; }
+.searchbar .ic { color: var(--ink-3); display: flex; }
+.searchbar input { flex: 1; border: 0; outline: 0; background: transparent; font-family: 'Roboto'; font-size: 14px; color: var(--ink); }
+.searchbar input::placeholder { color: var(--ink-3); }

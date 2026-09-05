@@ -1,0 +1,10 @@
+.navbar { position: absolute; left: 0; right: 0; bottom: 0; background: var(--white); border-top: 1px solid var(--line); display: flex; justify-content: space-around; padding: 9px 0 calc(13px + env(safe-area-inset-bottom)); z-index: 10; }
+.navbar button { border: 0; background: none; cursor: pointer; color: var(--ink-3); display: flex; flex-direction: column; align-items: center; gap: 3px; font-family: 'Roboto'; transition: color 0.15s; }
+.navbar button.on { color: var(--brown-dk); }
+.nav-label { font-size: 10px; }
+.nav-avatar { width: 24px; height: 24px; border-radius: 50%; background: var(--peach); color: var(--ink); font-size: 10px; font-weight: 600; display: flex; align-items: center; justify-content: center; }
+.nav-avatar.on { background: var(--brown); color: #fff; }
+
+@media (min-width: 700px) {
+  .navbar { justify-content: center; gap: clamp(48px, 8vw, 120px); }
+}

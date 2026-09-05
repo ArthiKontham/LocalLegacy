@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.63da56f4.css",
+    "main.js": "/static/js/main.38dc9488.js",
+    "static/media/logo-illustration.png": "/static/media/logo-illustration.27101b99d0f21f153e3b.png",
+    "static/media/arc.jpg": "/static/media/arc.0d1b22321d6708dd49bb.jpg",
+    "static/media/oriente.jpg": "/static/media/oriente.ac49fa0fc75e1171b94d.jpg",
+    "static/media/arume.jpg": "/static/media/arume.e62ecaf055333aa60820.jpg",
+    "static/media/portal.jpg": "/static/media/portal.ca60f9608327573fe01b.jpg",
+    "static/media/pinzat.jpg": "/static/media/pinzat.df9960e171c1ea3b7f0b.jpg",
+    "static/media/opera.jpg": "/static/media/opera.f8da241148a1d171e007.jpg",
+    "static/media/batllo.jpg": "/static/media/batllo.cc23fd6c43a9cd4565d4.jpg",
+    "static/media/casey.jpg": "/static/media/casey.8c3c8bf6600f04616375.jpg",
+    "static/media/sagrada.jpg": "/static/media/sagrada.29425da50ba05ed5340f.jpg",
+    "static/media/carla.jpg": "/static/media/carla.237731745b97288dd069.jpg",
+    "static/media/taylor.jpg": "/static/media/taylor.74e0dbb13115f0da752d.jpg",
+    "static/media/elena.jpg": "/static/media/elena.186083812df9102d1a2d.jpg",
+    "static/media/carlos.jpg": "/static/media/carlos.75dcdf7e2241e5fc8393.jpg",
+    "static/media/sam.jpg": "/static/media/sam.229250b6c33ae91ad35f.jpg",
+    "static/media/sofia.jpg": "/static/media/sofia.eb89b4bfb7e932e9782d.jpg",
+    "static/media/marta.jpg": "/static/media/marta.56d314c86e7418bc2971.jpg",
+    "static/media/pau.jpg": "/static/media/pau.d0be64f8682fcb17e77b.jpg",
+    "static/media/jordim.jpg": "/static/media/jordim.005acbf319af6cf78dc9.jpg",
+    "static/media/jordan.jpg": "/static/media/jordan.0c2c26e95a5b94770329.jpg",
+    "static/media/alexn.jpg": "/static/media/alexn.cd559633aa14ccac0207.jpg",
+    "index.html": "/index.html",
+    "main.63da56f4.css.map": "/static/css/main.63da56f4.css.map",
+    "main.38dc9488.js.map": "/static/js/main.38dc9488.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63da56f4.css",
+    "static/js/main.38dc9488.js"
+  ]
+}

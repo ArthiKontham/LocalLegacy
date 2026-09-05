@@ -1,0 +1,31 @@
+.save-title { font-size: 22px; margin-bottom: 16px; }
+.save-bucket { width: 100%; min-height: 190px; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--peach-soft); border: 1.5px solid var(--orange); border-radius: var(--r-lg); padding: 22px; font-family: 'Kaisei Tokumin', serif; font-size: 20px; color: var(--ink); cursor: pointer; margin-bottom: 18px; }
+.save-bucket:hover { filter: brightness(0.99); }
+
+.save-back { border: 0; background: none; cursor: pointer; color: var(--ink); display: block; margin: 16px 0 4px; }
+.save-bucket-title { font-size: 20px; margin: 4px 0 16px; }
+.save-bucket-empty { font-size: 14px; color: var(--ink-3); padding: 20px 2px; }
+
+.saved-card { border-radius: var(--r-lg); overflow: hidden; margin-bottom: 16px; cursor: pointer; background: var(--white); box-shadow: 0 1px 0 var(--line); transition: transform 0.18s ease; }
+.saved-card:hover { transform: translateY(-2px); }
+.saved-img { height: 150px; background: var(--card-img) center / cover no-repeat; }
+.saved-body { background: #f6f5f3; padding: 12px 14px 14px; margin-top: -22px; border-radius: var(--r-lg); position: relative; }
+.saved-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.saved-name { font-size: 16px; font-weight: 500; }
+.saved-bm { border: 0; background: none; cursor: pointer; color: var(--brown-dk); flex-shrink: 0; }
+.saved-meta { font-size: 13px; color: var(--ink-2); margin-top: 5px; display: flex; align-items: center; gap: 5px; }
+.saved-meta .star { color: var(--ink); }
+.saved-note { font-size: 12.5px; color: var(--ink-3); margin-top: 7px; line-height: 1.5; }
+
+.save-empty { text-align: center; padding: 70px 24px; display: flex; flex-direction: column; align-items: center; }
+.save-empty-ic { color: var(--ink); margin-bottom: 18px; }
+.save-empty h2 { font-size: 22px; margin-bottom: 10px; }
+.save-empty p { font-size: 15px; color: var(--ink-3); line-height: 1.5; max-width: 250px; margin: 0 auto 20px; }
+.save-empty-btn { max-width: 240px; }
+
+.saved-img { overflow: hidden; }
+
+@media (min-width: 700px) {
+  .save-buckets { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+  .save-buckets .save-bucket { margin-bottom: 0; }
+}

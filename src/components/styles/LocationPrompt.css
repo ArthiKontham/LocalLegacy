@@ -1,0 +1,10 @@
+.locprompt { height: 100%; display: flex; flex-direction: column; align-items: center; padding: 40px 28px 30px; text-align: center; }
+.loc-back { align-self: flex-start; border: 0; background: none; cursor: pointer; color: var(--ink); }
+.loc-brand { align-self: flex-start; margin: 10px 0 26px; }
+.loc-ring { width: 116px; height: 116px; border-radius: 50%; border: 2.5px solid var(--brown); color: var(--ink); display: flex; align-items: center; justify-content: center; margin: 10px 0 22px; }
+.loc-title { font-size: 24px; }
+.loc-text { font-size: 15px; color: var(--ink-2); line-height: 1.6; margin: 12px 0 22px; max-width: 280px; }
+.loc-denied { font-size: 12.5px; color: #9c3a22; background: #fbe4dc; border-radius: var(--r-md); padding: 11px 13px; line-height: 1.45; margin-bottom: 16px; max-width: 290px; }
+.loc-allow { max-width: 300px; }
+.loc-skip { margin-top: 14px; border: 0; background: none; color: var(--ink-3); font-family: 'Roboto'; font-size: 15px; cursor: pointer; }
+.loc-spacer { flex: 1; }

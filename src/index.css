@@ -1,0 +1,118 @@
+:root {
+  --white: #ffffff;
+  --ink: #1c1b17;
+  --ink-2: #5b584f;
+  --ink-3: #8e8b81;
+  --orange: #f2a46f;       /* primary buttons */
+  --orange-dk: #e58a4e;
+  --peach: #f0c1a1;        /* fields, secondary buttons */
+  --peach-line: #d9a989;
+  --peach-soft: #f8e7da;   /* description boxes, save buckets */
+  --card-img: #f4d1b9;     /* card image blocks */
+  --brown: #b58768;        /* active tab, avatar, accents */
+  --brown-dk: #9c6e4f;
+  --line: rgba(28, 27, 23, 0.12);
+  --line-2: rgba(28, 27, 23, 0.18);
+  --r-md: 12px;
+  --r-lg: 16px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #e7e2d7;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.display { font-family: 'Kaisei Tokumin', serif; font-weight: 700; letter-spacing: -0.01em; }
+
+.row { display: flex; align-items: center; }
+.between { justify-content: space-between; }
+
+/* buttons */
+.btn { width: 100%; border: 0; border-radius: var(--r-md); padding: 14px; font-family: 'Roboto'; font-size: 16px; font-weight: 500; cursor: pointer; transition: transform 0.15s, background 0.15s, filter 0.15s; }
+.btn:active { transform: scale(0.98); }
+.btn-primary { background: var(--orange); color: var(--ink); border: 1px solid var(--peach-line); }
+.btn-primary:hover { background: var(--orange-dk); }
+.btn-primary:disabled { opacity: 0.6; cursor: default; }
+.btn-peach { background: var(--peach); color: var(--ink); border: 1px solid var(--peach-line); }
+.btn-peach:hover { filter: brightness(0.97); }
+
+/* peach input field with leading icon */
+.field { display: flex; align-items: center; gap: 10px; background: var(--peach); border: 1px solid var(--peach-line); border-radius: var(--r-md); padding: 0 14px; height: 52px; margin-bottom: 14px; }
+.field .ic { color: var(--ink); display: flex; flex-shrink: 0; }
+.field input { flex: 1; border: 0; outline: 0; background: transparent; font-family: 'Roboto'; font-size: 15px; color: var(--ink); }
+.field input::placeholder { color: rgba(28,27,23,.55); }
+.field .show { color: var(--brown-dk); font-size: 14px; cursor: pointer; flex-shrink: 0; }
+
+.divider { display: flex; align-items: center; gap: 12px; color: var(--ink-2); font-size: 16px; margin: 18px 0; font-family: 'Kaisei Tokumin', serif; }
+.divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: var(--ink); opacity: 0.5; }
+
+.guest-link { display: block; margin: 0 auto; border: 0; background: none; color: var(--ink-3); font-family: 'Roboto'; font-size: 15px; text-decoration: underline; cursor: pointer; }
+
+.error { background: #fbe4dc; color: #9c3a22; font-size: 13px; border-radius: var(--r-md); padding: 11px 13px; margin-bottom: 14px; line-height: 1.45; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ---------- DARK THEME ---------- */
+.phone[data-theme="dark"] {
+  --white: #221d1a;
+  --ink: #f1ece6;
+  --ink-2: #c3bcb2;
+  --ink-3: #9a9286;
+  --peach-soft: #3a2c22;
+  --card-img: #4a3527;
+  --line: rgba(255, 255, 255, 0.12);
+  --line-2: rgba(255, 255, 255, 0.2);
+  background: #17120f;
+}
+.phone[data-theme="dark"] .screen,
+.phone[data-theme="dark"] .auth { background: #17120f; }
+.phone[data-theme="dark"] .appbar { background: #17120f; }
+.phone[data-theme="dark"] .listing-body,
+.phone[data-theme="dark"] .guide-body,
+.phone[data-theme="dark"] .saved-body { background: #251f1b; }
+.phone[data-theme="dark"] .listing,
+.phone[data-theme="dark"] .guide-card,
+.phone[data-theme="dark"] .saved-card,
+.phone[data-theme="dark"] .profile-row,
+.phone[data-theme="dark"] .trip-input { background: #221d1a; }
+.phone[data-theme="dark"] .explore-menu { background: #2a241f; }
+.phone[data-theme="dark"] .explore-item:hover { background: #3b4256; }
+.phone[data-theme="dark"] .navbar { background: rgba(23, 18, 15, 0.94); border-top-color: var(--line); }
+.phone[data-theme="dark"] .search-bar { background: var(--peach); }
+.phone[data-theme="dark"] .profile-logout { background: transparent; }
+.phone[data-theme="dark"] .toggle { background: #4a443d; }
+
+/* fullscreen image viewer */
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.9); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 22px; cursor: zoom-out; }
+.lightbox img { max-width: 94vw; max-height: 90vh; border-radius: 12px; box-shadow: 0 24px 70px rgba(0,0,0,0.6); }
+
+/* dark theme: tone down bright buttons / panels / menus */
+.phone[data-theme="dark"] .btn-peach { background: #3a2c22; color: var(--ink); border-color: var(--line); }
+.phone[data-theme="dark"] .btn-primary { background: var(--orange-dk); color: #17120f; border-color: var(--brown-dk); }
+.phone[data-theme="dark"] .btn-primary:hover { background: var(--orange); }
+.phone[data-theme="dark"] .trip-cta { background: var(--orange-dk); color: #17120f; border-color: var(--brown-dk); }
+.phone[data-theme="dark"] .trip-form-inner { background: #2f251e; }
+.phone[data-theme="dark"] .trip-result { background: #221d1a; }
+.phone[data-theme="dark"] .trip-card { background: rgba(255,255,255,0.04); }
+.phone[data-theme="dark"] .cat-menu { background: #2a241f; border-color: var(--line); }
+.phone[data-theme="dark"] .save-bucket { background: #2f251e; border-color: var(--brown); }
+.phone[data-theme="dark"] .toast { background: #2a241f; color: var(--ink); }
+.phone[data-theme="dark"] .profile-logout { border-color: #c0584f; color: #e57a70; }
+
+/* establish text color inside the phone so it follows the active theme (fixes dark-mode dark text) */
+.phone { color: var(--ink); }
+.phone[data-theme="dark"] .display,
+.phone[data-theme="dark"] .listing-name,
+.phone[data-theme="dark"] .detail-name,
+.phone[data-theme="dark"] .guide-name,
+.phone[data-theme="dark"] .saved-name,
+.phone[data-theme="dark"] .trip-form-title,
+.phone[data-theme="dark"] .trip-label,
+.phone[data-theme="dark"] .trip-result-title,
+.phone[data-theme="dark"] .trip-text,
+.phone[data-theme="dark"] .trip-empty { color: #ffffff; }
+.phone[data-theme="dark"] .trip-text strong { color: #ffffff; }
