@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Local Legacy
 
 Design-for-social-good travel app (Barcelona). **Create React App + React Router + Firebase**,
@@ -53,3 +54,4 @@ service cloud.firestore {
 - **Google** sign-in supported; Google users also get a `users/{uid}` record.
 - **Saved places persist** in `users/{uid}.saved` — log out, return weeks later, log in, and
   your saved hotels/restaurants/guides load back into Discover, Save, and Trip.
+=======
